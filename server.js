@@ -6,7 +6,7 @@ const app = express();
 app.use(bodyParser.json());
 
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
-const GITHUB_API_URL = "https://api.github.com/repos/LeafGaming1/bot-unban/contents/unbanned_users.json";
+const GITHUB_API_URL = "https://api.github.com/repos/LeafGaming1/unbanned_users/contents/unbanned_users.json";
 
 async function fetchList() {
     const resp = await axios.get(GITHUB_API_URL, {
